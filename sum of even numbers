@@ -1,0 +1,8 @@
+n=98762
+sum=0
+while n:
+    rem=n%10
+    if rem%2==0:
+        sum+=rem
+    n=n//10
+print(sum) 
