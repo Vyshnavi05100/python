@@ -1,0 +1,15 @@
+a=10 
+print(type(a))
+
+b=3+2j
+b=b+1
+print(b)
+
+c=5+1j
+print(type(c))
+
+d=9.2
+print(type(d))
+
+e="hello"
+print(type(e))
