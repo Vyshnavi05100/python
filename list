@@ -1,0 +1,9 @@
+a=[1,2,"vyshu",4.9,True]
+print(type(a))
+print(a[3])
+
+a[2]="bhavi"
+print(a)
+
+a.append([7,8.9])
+print(a)
