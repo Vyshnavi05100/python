@@ -1,0 +1,9 @@
+a=[1,2,-3,4,-7]
+pos=neg=0
+for i in a:
+    if i>0:
+        pos+=i
+        
+    else:
+        neg+=i
+print([pos,neg])
