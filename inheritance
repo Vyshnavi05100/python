@@ -1,0 +1,6 @@
+class com_a:
+    nivi=10
+class com_b(com_a): #it will access the parent class but parent class can't the child class
+    niva_amt=20
+niva=com_b()
+print(niva.niva_amt + niva.nivi)
