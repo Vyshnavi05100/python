@@ -1,0 +1,13 @@
+n=input()
+print(ord(n))  //ascii value printed
+
+n="aDGnk"
+for i in n:
+    if ord(i)>96 and ord(i)<=122:#printed lower case letters
+        print(i)
+
+n="aDGnk"
+for i in n:
+    if ord(i)>64 and ord(i)<=90:#printed upper case letters
+        print(i)
+
