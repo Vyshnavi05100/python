@@ -1,0 +1,14 @@
+def fun(a):
+    if len(a)==1:
+        return a[0],a[0]
+    mid=len(a)//2
+    l_min,l_max=fun(a[:mid])
+    r_min,r_max=fun(a[mid:])
+    min=l_min if l_min<r_min else r_min
+    max=l_max if l_max>r_max else r_max
+    return min,max
+
+a=[8,2,1,9,34]
+print(fun(a))
+
+(1,34)
