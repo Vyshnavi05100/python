@@ -1,0 +1,10 @@
+a=[1,2,3,5,9]
+b=[1,2,5,9]
+for i in range(len(b)):
+    if a[i]!=b[i]:
+        print(a[i])
+        break
+else:
+    print(i+1)
+    
+3
