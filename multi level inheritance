@@ -1,0 +1,52 @@
+# grandparent, parent, child
+
+class bhavya:
+    a=30
+class vyshu(bhavya):
+    a=35
+class sree(vyshu):
+    a=40
+    
+obj=sree()
+print(obj.a)
+
+40
+
+class bhavya:
+    a=30
+class vyshu(bhavya):  # pass is used to pass to another class which is inherited
+    pass
+class sree(vyshu):
+    pass
+    
+obj=sree()
+print(obj.a)
+
+30
+
+
+class bhavya:
+    def __init__(self):
+        print("choco")
+class vyshu(bhavya):
+    def __init__(self):
+        print("chocolate")
+class sree(vyshu):
+    pass
+sree()
+
+
+chocolate
+
+
+class bhavya:
+    def __init__(self):
+        print("choco")
+class vyshu(bhavya):
+    pass
+class sree(vyshu):
+    pass
+vyshu()
+
+
+choco
