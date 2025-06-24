@@ -18,3 +18,22 @@ output:
 
 6
 
+def binary_search(a,key):
+    s=0
+    e=len(a)-1
+    while s<=e:
+        mid=(s+e)//2
+        if a[mid]==key:
+            return mid
+        elif a[mid]>key:
+            e=mid-1
+        else:
+            s=mid+1
+    return "Not found"
+
+a=[5,8,10,12,41,45,81,108]
+print(binary_search(a,1))
+
+Not found
+
+
