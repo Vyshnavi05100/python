@@ -1,0 +1,18 @@
+#taking properties from parent to child
+#priority wise it will checks
+
+class bhavya:#parent class 1
+    def __init__(self):
+        print("No ice cream")
+class vyshu(bhavya):# parent class 2
+    def __init__(self):
+        print("take chocolate")
+class sree(vyshu,bhavya):# child class
+    def __init__(self):
+        super().__init__()
+    def chikki(self):
+        print("go away")
+obj=bhavya()
+
+
+#No ice cream
