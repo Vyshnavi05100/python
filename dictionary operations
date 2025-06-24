@@ -1,0 +1,5 @@
+a={"one":1.0,"bool":False,"three":3}
+print(a["one"])
+print(a["three"])
+print(a["bool"])
+
