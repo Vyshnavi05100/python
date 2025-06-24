@@ -1,0 +1,13 @@
+def fun(a):
+    if len(a)==1:
+        return a[0]
+    mid=len(a)//2
+    left=fun(a[:mid])
+    right=fun(a[mid:])
+    return left if left<right else right
+
+a=[8,2,1,9,34]
+print(fun(a))
+
+
+1
