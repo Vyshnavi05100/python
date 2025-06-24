@@ -1,0 +1,6 @@
+a=input()
+res=""
+for i in a:
+    if i in "aeiou":
+        res+=i
+print(res)
