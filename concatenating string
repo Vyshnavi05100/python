@@ -1,0 +1,7 @@
+a="kittu"
+b="pinky"
+print(a+b)
+
+a="kittu"
+a=a+"pinky"
+print(a)
