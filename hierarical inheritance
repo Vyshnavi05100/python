@@ -1,0 +1,19 @@
+One parent multiple child's
+			
+It can inherit the properties from parent not from siblings
+
+
+class bhavya:
+    def __init__(self):
+        print("choco")
+class vyshu(bhavya):
+    def __init__(self):
+        print("mummy")
+    def chikki(self):
+        print("hate u")
+class sree(bhavya):
+    pass
+sree()
+
+
+choco
