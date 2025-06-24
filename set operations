@@ -1,0 +1,8 @@
+a={1,2,"dhgehjwc",8.9}
+print(a)
+a.add(78)
+print(a)
+a.remove(8.9)
+print(a)
+a.discard(7)
+print(a)
