@@ -1,0 +1,11 @@
+def linear_search(a,data):
+    for i in range(len(a)):
+        if a[i] ==data:
+            return f"{data} found at {i}"
+    return "not found"
+a=[4,6,3,420,56,432,65]
+print(linear_search(a,4))
+
+output:
+
+4 found at 0
