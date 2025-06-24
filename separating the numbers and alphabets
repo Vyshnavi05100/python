@@ -1,0 +1,8 @@
+a="hellowo427rl654d"
+num=alp=" "
+for i in a:
+    if ord(i) in range(48,58):
+        num+=i
+    else:
+        alp+=i
+print(num,alp,end=" ")
