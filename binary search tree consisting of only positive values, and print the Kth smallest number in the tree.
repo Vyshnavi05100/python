@@ -1,0 +1,52 @@
+class Node:
+    def __init__(self, key):
+        self.left = None
+        self.right = None
+        self.data = key
+
+class BST:
+    def __init__(self):
+        self.root = None
+        self.count = 0
+        
+    def insert(self, key):
+        newNode = Node(key)
+        if self.root is None:
+            self.root = newNode
+        else:
+            temp = self.root
+            while True:
+                if temp.data == key:
+                    return
+                elif key > temp.data and temp.right is None:
+                    temp.right = newNode
+                    return
+                elif key < temp.data and temp.left is None:
+                    temp.left = newNode
+                    return
+                elif key > temp.data:
+                    temp = temp.right
+                else:
+                    temp = temp.left
+    
+    def findKthSmall(self, root, k):
+        if root is None:
+            return
+        self.findKthSmall(root.left, k)
+        self.count += 1
+        if self.count == k:
+            print(root.data)
+            return
+        self.findKthSmall(root.right, k)
+            
+    def findSmall(self, k):
+        return self.findKthSmall(self.root, k)
+
+bst = BST()
+ls = list(map(int, input().strip().split()))
+for i in ls:
+    if(i<1):
+        break
+    bst.insert(i)
+k = ls[-1]
+bst.findSmall(k)
