@@ -1,0 +1,8 @@
+a=999
+while a>9:
+    sum=0
+    sum+=a%10  
+    a//=10
+    a=sum
+print(sum)
+
