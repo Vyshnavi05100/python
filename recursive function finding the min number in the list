@@ -1,0 +1,12 @@
+def sum(n,i=0):
+    if i==len(n)-1:   #end of the list
+        return n[i]         
+    return min(n[i],sum(n,i+1))
+
+a=[2,3,6,5]
+print(sum(a))
+
+#0=>m(2,s(1))
+#1=>m(3,s(2))
+#2=>m(6,s(3))
+#3=>m(5,s(4))=>5
