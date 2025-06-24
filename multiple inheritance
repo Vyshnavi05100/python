@@ -1,0 +1,13 @@
+class bhavya:#parent class 1
+    def icecream(self):
+        print("No ice cream")
+class vyshu:# parent class 2
+    def chocolate(self):
+        print("take chocolate")
+class sree(bhavya,vyshu):# child class
+    def chikki(self):
+        print("done")
+obj=sree()
+obj.icecream()
+
+#one or more parent classes only 1 child class
