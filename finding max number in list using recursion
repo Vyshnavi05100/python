@@ -1,0 +1,7 @@
+def sum(n,i=0):
+    if i==len(n)-1:
+        return n[i]
+    return max(n[i],sum(n,i+1))
+    
+a=[2,13,6,1,5]
+print(sum(a))
