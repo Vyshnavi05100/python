@@ -10,4 +10,34 @@ class sree(bhavya,vyshu):# child class
 obj=sree()
 obj.icecream()
 
+No ice cream
 #one or more parent classes only 1 child class
+
+
+class bhavya:#parent class 1
+    def icecream(self):
+        print("No ice cream")
+class vyshu:# parent class 2
+    def icecream(self):
+        print("take chocolate")
+class sree(vyshu,bhavya):# child class
+    def chikki(self):
+        print("done")
+obj=sree()
+obj.icecream()
+
+take chocolate
+
+class bhavya:#parent class 1
+    def icecream(self):
+        print("No ice cream")
+class vyshu(bhavya):# parent class 2
+    def icecream(self):
+        print("take chocolate")
+class sree(vyshu):# child class
+    def dairymilk(self):
+        print("go away")
+obj=sree()
+obj.dairymilk()
+
+go away
